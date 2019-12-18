@@ -51,7 +51,9 @@ public class PresenceToolMain extends Application {
         Canvas canvas = new Canvas(300, 250);
         GraphicsContext gc = canvas.getGraphicsContext2D();
         drawShapes(gc);
+        canvas.setLayoutX(300);
         root.getChildren().add(canvas);
+
         stage.setScene(new Scene(root));
         stage.show();
 
